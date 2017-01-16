@@ -1,0 +1,1 @@
+DuoScroll is a small Chrome extension that adds a button to your toolbar which scrolls to the next active lesson in your Duolingo tree.

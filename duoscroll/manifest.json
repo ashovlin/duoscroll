@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "DuoScroll",
+  "description": "Adds a button to scroll to the next active lesson in your Duolingo skills tree.",
+  "version": "0.1",
+
+  "page_action": {
+    "default_title": "Scroll to next unlocked lesson"
+  },
+
+  "permissions": [
+    "declarativeContent",
+    "activeTab"
+  ],
+
+  "background": {
+    "scripts": [ "background.js" ]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://duolingo.com/*"],
+      "js": ["scroll.js"]
+    }
+  ],
+
+  "icons": { "128": "icon.png" }
+}
