@@ -6,7 +6,7 @@ function scrollToFirstUnlockedSkill() {
   		var dataset = skill.dataset.test;
 
   		// don't include the bonus row (purple) for now
-  		if (dataset.includes("red")|| dataset.includes("green"))
+  		if (!dataset.includes("gold") && !dataset.includes("purple"))
   		{
 	  		skill.scrollIntoViewIfNeeded(true);
 	  		return;  			
